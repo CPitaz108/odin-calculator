@@ -1,3 +1,51 @@
+html, body {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: rgb(226, 249, 255);
+}
+
+.calc-body {
+  width: 400px;
+  height: 600px;
+  position: fixed;
+  top: 12.5%;
+  left: 25%;
+  border: 8px solid black;
+  border-radius: 10px/10px;
+}
+
 .calc-row {
   display: flex;
+  border: 2px solid black;
+  height: 25%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calc-screen {
+  height: 25%;
+  width: 100%;
+  border: 3px solid black;
+}
+
+.calc-keypad {
+  height: 75%;
+  width: 100%;
+  background-color: rgb(168, 168, 168);
+}
+
+.calc-btn {
+  height: 100%;
+  width: 25%;
+  border: 2px outset black;
+  text-align: center;
+  align-content: center;
+  font-size: 24px;
+  font-weight: bolder;
+  color: rgb(59, 59, 59);
+}
+
+.calc-btn:hover {
+  background-color: rgb(155, 155, 155);
+  cursor: pointer;
 }

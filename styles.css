@@ -26,6 +26,8 @@ html, body {
   height: 25%;
   width: 100%;
   border: 3px solid black;
+  box-sizing: border-box;
+  background-color: rgb(133, 133, 133);
 }
 
 .calc-keypad {
@@ -43,6 +45,10 @@ html, body {
   font-size: 24px;
   font-weight: bolder;
   color: rgb(59, 59, 59);
+}
+
+.operator {
+  font-size: 30px;
 }
 
 .calc-btn:hover {

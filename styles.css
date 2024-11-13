@@ -2,6 +2,7 @@ html, body {
   margin: 0px;
   box-sizing: border-box;
   background-color: rgb(226, 249, 255);
+  font-family: system-ui;
 }
 
 .calc-body {
@@ -12,6 +13,7 @@ html, body {
   left: 25%;
   border: 8px solid black;
   border-radius: 10px/10px;
+  background-color: rgb(133, 133, 133);
 }
 
 .calc-row {
@@ -28,6 +30,10 @@ html, body {
   border: 3px solid black;
   box-sizing: border-box;
   background-color: rgb(133, 133, 133);
+  align-content: center;
+  padding: 10%;
+  font-size: 32px;
+  clip-path: content-box;
 }
 
 .calc-keypad {

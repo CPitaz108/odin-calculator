@@ -7,7 +7,7 @@
   <body>
     <div class="calc-body">
       <div class="calc-screen"></div>
-      <div class="calc-keypad">
+      <div class="calc-keypad" onclick="displayInput(event.target.textContent)">
         <div class="calc-row">
           <div class="calc-btn num">9</div>
           <div class="calc-btn num">8</div>
@@ -29,10 +29,11 @@
         <div class="calc-row">
           <div class="calc-btn num">.</div>
           <div class="calc-btn num">0</div>
-          <div class="calc-btn clear">Clear</div>
+          <div class="calc-btn clear" onclick="clearScreen(event)">Clear</div>
           <div class="calc-btn operator">-</div>
         </div>
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

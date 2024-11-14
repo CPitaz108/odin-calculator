@@ -34,12 +34,11 @@ function displayInput(value){
       }
     }else if(lhs != "" && operator != ""){
       if(!operators.includes(value)){
-        rhs = value;
-        screen.textContent += value;
-      }
-    }else if(lhs != "" && operator != "" && rhs != ""){
-      if(!operators.includes(value)){
-        rhs += value;
+        if(rhs == ""){
+          rhs = value;
+        }else{
+          rhs += value;
+        }
         screen.textContent += value;
       }
     }

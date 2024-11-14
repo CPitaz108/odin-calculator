@@ -11,7 +11,7 @@ html, body {
   position: fixed;
   top: 12.5%;
   left: 25%;
-  border: 8px solid black;
+  border: 30px solid black;
   border-radius: 10px/10px;
   background-color: rgb(133, 133, 133);
 }
@@ -19,7 +19,7 @@ html, body {
 .calc-row {
   display: flex;
   border: 2px solid black;
-  height: 25%;
+  height: 20%;
   width: 100%;
   box-sizing: border-box;
 }
@@ -27,7 +27,6 @@ html, body {
 .calc-screen {
   height: 25%;
   width: 100%;
-  border: 3px solid black;
   box-sizing: border-box;
   background-color: rgb(133, 133, 133);
   align-content: center;
@@ -60,4 +59,8 @@ html, body {
 .calc-btn:hover {
   background-color: rgb(155, 155, 155);
   cursor: pointer;
+}
+
+.equal {
+  width: 100%;
 }

@@ -3,6 +3,7 @@ const operators = ["/", "-", "*", "+"]
 let lhs = "";
 let rhs = "";
 let operator = "";
+let result = false;
 
 function operate(operator, lhs, rhs){
   switch(operator){
@@ -26,8 +27,13 @@ function displayInput(value){
       }
     }else if(lhs != "" && operator == ""){
       if(!operators.includes(value)){
-        lhs += value;
-        screen.textContent += value;
+        if(result){
+          lhs = value;
+          screen.textContent = value;
+        }else{
+          lhs += value;
+          screen.textContent += value;
+        }
       }else if(operators.includes(value)){
         operator = value;
         screen.textContent += value;
@@ -50,6 +56,7 @@ function returnEquation(){
     let statement = operate(operator, parseInt(lhs), parseInt(rhs));
     screen.textContent = statement;
     lhs = statement;
+    result = true;
     operator = "";
     rhs = "";
   }

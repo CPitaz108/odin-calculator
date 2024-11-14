@@ -14,6 +14,9 @@ function operate(operator, lhs, rhs){
     case "*":
       return lhs * rhs;
     case "/":
+      if(rhs == 0){
+        return "dbz"
+      }
       return lhs / rhs;
   }
 }
@@ -54,6 +57,11 @@ function displayInput(value){
 function returnEquation(){
   if(lhs != "" && rhs != "" && operator != ""){
     let statement = operate(operator, parseInt(lhs), parseInt(rhs));
+    if(statement == "dbz"){
+      clearScreen()
+      screen.textContent = "Divide by Zero Error!"
+      return;
+    }
     screen.textContent = statement;
     lhs = statement;
     result = true;
@@ -62,7 +70,7 @@ function returnEquation(){
   }
 }
 
-function clearScreen(event){
+function clearScreen(){
   screen.textContent = "";
   lhs = ""
   rhs = ""
